@@ -1,5 +1,5 @@
 {
-  "name": "clappr-rtmp",
+  "name": "clappr-speech-control",
   "version": "0.0.1",
   "description": "Clappr Speech Control Plugin",
   "main": "dist/speech_control.js",
