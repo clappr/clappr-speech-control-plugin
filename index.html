@@ -8,8 +8,9 @@
   <script type="text/javascript" charset="utf-8">
 window.onload = function() {
   var player = new Clappr.Player({
-    source: 'http://cdn.bem.tv/stream/soccer5/playlist.m3u8',
-    plugins: { container: [SpeechControl] }
+    source: "http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4",
+    plugins: { container: [SpeechControl] },
+    hideMediaControl: false
   });
   player.attachTo(document.getElementById('player-wrapper'));
 }
