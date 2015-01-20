@@ -23,26 +23,38 @@ class SpeechControl extends ContainerPlugin {
     this.recognition.start()
   }
 
-  recognitionStarted() {}
+  recognitionStarted() { console.log('start receiving voice commands') }
 
-  recognitionEnded() {}
+  recognitionEnded() { console.log('done receiving voice commands') }
 
-  recognitionTalked(event) {
-    var message = this.getMessage(event)
+  recognitionTalked(event) { this.handleCommand(event) }
+
+  executeCommand(message) {
     if (message.match(/play/)) {
+      console.log("playing")
       if (!this.container.isPlaying()) this.container.play()
+    } else if (message.match(/stop/)) {
+      console.log("stopping")
+      this.container.stop()
+    } else if (message.match(/pause/)) {
+      console.log("pausing")
+      this.container.pause()
+    } else if (message.match(/mute/)) {
+      console.log("muting")
+      this.container.setVolume(0)
+    } else {
+      console.log('unrecognized command:', message)
     }
   }
 
-  getMessage(event) {
+  handleCommand(event) {
     if (event.results && event.results.length) {
-      for (var i = 0; i <= event.results.length; i++) {
-        if (!!event.results[i] && event.results[i][0]) {
-          return event.results[i][0].transcript
+      for (var i = event.resultIndex; i <= event.results.length; ++i) {
+        if (_.has(event.results[i], 0)) {
+          this.executeCommand(event.results[i][0].transcript)
         }
       }
     }
-    return undefined
   }
 }
 
