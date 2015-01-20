@@ -1,6 +1,23 @@
 {
-  "name": "speech_control",
-  "version": "0.0.0",
+  "name": "clappr-rtmp",
+  "version": "0.0.1",
+  "description": "Clappr Speech Control Plugin",
+  "main": "dist/speech_control.js",
+  "author": "Flávio Ribeiro",
+  "keywords": [
+    "clappr",
+    "player",
+    "voice",
+    "streaming"
+  ],
+  "homepage": "http://clappr.io",
+  "bugs": {
+    "url": "http://github.com/flavioribeiro/clappr-speech-control-plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:flavioribeiro/clappr-speech-control-plugin.git"
+  },
   "dependencies": {
     "clappr": "latest"
   },
