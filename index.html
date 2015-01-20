@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" charset="utf-8" src="/dist/clappr.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/dist/speech_control.js"></script>
+  <title>SpeechControl Test Page</title>
+  <script type="text/javascript" charset="utf-8">
+window.onload = function() {
+  var player = new Clappr.Player({
+    source: 'http://cdn.bem.tv/stream/soccer5/playlist.m3u8',
+    plugins: { container: [SpeechControl] }
+  });
+  player.attachTo(document.getElementById('player-wrapper'));
+}
+  </script>
+</head>
+<body>
+  <div id="player-wrapper">
+  </div>
+</body>
+</html>
+
