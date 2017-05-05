@@ -1,5 +1,7 @@
 # Clappr Speech Control Plugin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/clappr/clappr-speech-control-plugin.svg)](https://greenkeeper.io/)
+
 Control [Clappr player](http://github.com/globocom/clappr) using your voice. See it working [here](https://vimeo.com/117335085) or give you a [try](http://flv.io/speech_control.html).
 
 ## How to use
