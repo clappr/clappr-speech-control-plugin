@@ -22,21 +22,21 @@
     "clappr": "latest"
   },
   "devDependencies": {
-    "browserify": "^6.2.0",
+    "browserify": "^14.3.0",
     "es6ify": "^1.2.0",
     "gulp": "^3.8.6",
-    "gulp-minify-css": "^0.3.6",
-    "underscore" : "1.7.0",
+    "gulp-minify-css": "^1.2.4",
+    "underscore" : "1.8.3",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
+    "gulp-sass": "^3.1.0",
     "vinyl-source-stream": "^1.0.0",
     "yargs": "latest",
-    "glob": "^4.0.4",
+    "glob": "^7.1.1",
     "mkdirp": "^0.5.0",
     "express": "^4.6.1",
     "gulp-util": "latest",
-    "gulp-uglify": "^1.0.1",
-    "gulp-livereload": "^2.1.0",
-    "gulp-streamify": "0.0.5"
+    "gulp-uglify": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-streamify": "1.0.2"
   }
 }
